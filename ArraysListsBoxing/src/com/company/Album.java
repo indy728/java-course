@@ -22,9 +22,12 @@ public class Album {
     public void listSongs() {
         for (int i = 0; i < songs.size(); i++) {
             System.out.println("\t" + (int)(i + 1) + ": " +
-                    songs.get(i).getTitle() + " (" +
-                    songs.get(i).getDuration() + ")");
+                    songs.get(i).getFormattedSong());
         }
+    }
+
+    public int getSongCount() {
+        return songs.size();
     }
 
     public Song getSong(int selection) {

@@ -16,4 +16,8 @@ public class Song {
     public double getDuration() {
         return duration;
     }
+
+    public String getFormattedSong() {
+        return title + " (" + duration + ")";
+    }
 }
